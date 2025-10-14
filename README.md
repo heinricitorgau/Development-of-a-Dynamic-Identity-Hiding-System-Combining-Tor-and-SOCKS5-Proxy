@@ -1,4 +1,4 @@
-# Project 3 — Dynamic Identity Obfuscation with Tor & SOCKS5 (ghost_mode3)
+# Development of a Dynamic Identity Hiding System Combining Tor and SOCKS5 Proxy
 
 **Short description**  
 Implements an automated IP-rotation controller that interfaces with Tor's ControlPort and routes traffic through a SOCKS5 proxy; optionally supports obfs4 bridges for DPI resistance.
