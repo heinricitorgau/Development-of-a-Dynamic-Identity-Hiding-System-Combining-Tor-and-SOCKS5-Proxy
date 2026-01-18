@@ -58,7 +58,6 @@ def run_test(
                     c.authenticate()
                     c.signal(Signal.NEWNYM)
 
-                # 等 Tor 建立新 circuit
                 time.sleep(wait_time)
 
                 ip = get_ip()
@@ -83,6 +82,5 @@ def run_test(
     return log_file
 
 
-# 讓你直接 python ghost_mode3_data.py 也能跑（非 MATLAB）
 if __name__ == "__main__":
     run_test()
