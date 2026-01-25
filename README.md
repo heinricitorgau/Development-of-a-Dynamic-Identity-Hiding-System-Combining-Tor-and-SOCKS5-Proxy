@@ -141,14 +141,14 @@ X Not suitable for:
 
 ---
 
-## 📄 Disclaimer
+## Disclaimer
 
 This project is intended **for academic research and educational purposes only**.  
 Users are responsible for complying with local laws and ethical guidelines when using anonymity technologies.
 
 ---
 
-## 👤 Author
+## Author
 
 **Gao En-Zai**  
 Department of Computer Science  
