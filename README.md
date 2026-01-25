@@ -1,4 +1,4 @@
-# 🕶️ Dynamic Identity-Hiding System (Tor + SOCKS5)
+# Dynamic Identity-Hiding System (Tor + SOCKS5)
 
 A research-oriented project that implements an automated identity-hiding system by integrating the **Tor anonymity network** with a **SOCKS5 proxy**, enabling controllable IP rotation and quantitative analysis of anonymity-related performance.
 
@@ -6,7 +6,7 @@ This project focuses on **controllability, experimentation, and risk awareness**
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 As online tracking, censorship, and IP-based blocking become increasingly common, static IP usage poses significant privacy and security risks—especially in scenarios such as:
 
@@ -18,7 +18,7 @@ This project designs a **dynamic identity-hiding framework** that allows program
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Programmatically control Tor circuit rebuilding using **Tor ControlPort**
 - Automate exit IP rotation with **Python + Stem**
@@ -29,7 +29,7 @@ This project designs a **dynamic identity-hiding framework** that allows program
 
 ---
 
-## 🧠 System Architecture
+## System Architecture
 
 MATLAB
 ↓ (pyenv)
@@ -49,28 +49,28 @@ External IP Verification API
 
 ---
 
-## 🔧 Key Components
+## Key Components
 
-### 1️⃣ Tor + ControlPort
+### 1 Tor + ControlPort
 - Uses Tor’s `NEWNYM` signal to request new circuits
 - Enables **controllable and repeatable** IP rotation experiments
 
-### 2️⃣ SOCKS5 Proxy
+### 2 SOCKS5 Proxy
 - Routes traffic via `socks5h://127.0.0.1`
 - Ensures DNS queries are also proxied (prevents DNS leaks)
 
-### 3️⃣ obfs4 (Pluggable Transport)
+### 3 obfs4 (Pluggable Transport)
 - Obfuscates Tor traffic to evade DPI and censorship
 - Particularly useful in restricted or monitored networks
 
-### 4️⃣ MATLAB Integration
+### 4 MATLAB Integration
 - Python scripts are invoked via MATLAB `pyenv`
 - Latency and success rates are analyzed and visualized
 - Enables quantitative evaluation of anonymity trade-offs
 
 ---
 
-## 📊 Experimental Results (Summary)
+## Experimental Results (Summary)
 
 - Automated IP rotation succeeded with **measurable latency**
 - Average IP rotation time: **~9–13 seconds** (environment dependent)
@@ -80,7 +80,7 @@ External IP Verification API
 
 ---
 
-## ⚠️ Security Considerations & Limitations
+## Security Considerations & Limitations
 
 This project **does not claim absolute anonymity**.
 
@@ -97,21 +97,21 @@ Potential risks include:
 
 ---
 
-## 🧪 Use Cases
+## Use Cases
 
-✔ Suitable for:
+V Suitable for:
 - Cybersecurity and anonymity research  
 - Anti-tracking experiments  
 - Anonymous data collection (controlled environments)  
 
-✖ Not suitable for:
+X Not suitable for:
 - Real-time communication
 - High-frequency or latency-sensitive services
 - Scenarios requiring guaranteed anonymity
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 .
 ├── ghost_mode3.py # Main IP rotation script
@@ -125,7 +125,7 @@ Potential risks include:
 
 ---
 
-## 📚 References
+## References
 
 - Tor Project – Tor Manual  
   https://www.torproject.org/docs/tor-manual.html
